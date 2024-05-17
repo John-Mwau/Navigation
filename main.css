@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 25px;
+    background-color: antiquewhite;
+}
+.Menu div:nth-child(1){
+    display: inline-flex;
+} 
+.Menu .fa{
+
+    margin-right: 1rem;
+}
+.Login{
+    display: flex;
+    flex-direction: row;
+}
+.Login h4:nth-child(1){
+    color:#0a6b24;
+    margin-right: 1.5rem;
+    font-size: 22PX;
+}
+.Login h4:nth-child(2){
+    border-radius: 18px;
+    margin-top: -4px;
+    padding: 5px 6px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    background-color: #88bfbd;
+    font-size: 22px;
+}
+/*Prevent The Mobile Login from Displaying in Desktop */
+.Mobile_Login{
+    display: none;
+}
+.Mobile_Login .fa{
+    color: #47574b;
+    padding: 0 0.5rem 1rem 0;
+    font-weight: bolder;
+}
+.Signup{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.Signup p:nth-child(2){
+    background-color: aqua;
+    padding-top: 1rem;
+    position: absolute;
+    width:100%;
+}
+.Menu_List{
+    display: none;
+}
+.Menu_List ul{
+    list-style: none;
+    font-size: 20px;
+
+}
+.Menu_List ul li{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+
+}
+.Menu_List ul li:last-child ul{
+    display: inline-flex;
+    position: absolute;
+    top: 10%;
+}
+
+@media (max-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+         justify-content: space-between;
+        align-items: center;
+       /*  padding: 0.5rem 1rem; */
+        font-size: 25px;
+        background-color: antiquewhite;
+    }
+    .Login{
+        display: none;
+    }
+    .Signup{
+        position: absolute;
+        left: 100%;
+    }
+    .Mobile_Login{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+    .Menu h5{
+        display: none;
+    }
+    .Menu_List{
+        display: inline-block;
+        position: absolute;
+        left: 100%;
+    }
+}
