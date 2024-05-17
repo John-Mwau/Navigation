@@ -83,7 +83,7 @@
         flex-direction: row;
          justify-content: space-between;
         align-items: center;
-       /*  padding: 0.5rem 1rem; */
+        padding: 5px;
         font-size: 25px;
         background-color: antiquewhite;
         overflow: hidden;
@@ -96,16 +96,22 @@
         left: 100%;
     }
     .Mobile_Login{
-        display: flex;
-        flex-direction: row;
-        align-items: center; 
+        display: inline-flex
+    }
+    .Mobile_Login .fa{
+        margin-top: 7px;
     }
     .Menu h5{
         display: none;
+    
     }
     .Menu_List{
         display: inline-block;
         position: absolute;
         left: 100%;
+    }
+    .Logo img{
+        width: 200px;
+        height: 70px;
     }
 }
