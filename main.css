@@ -2,6 +2,10 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
 }
 .header{
     display: flex;
@@ -11,13 +15,12 @@
     padding: 0.5rem 1rem;
     font-size: 25px;
     background-color: antiquewhite;
-    overflow: hidden;
 }
 .Menu div:nth-child(1){
     display: inline-flex;
 } 
 .Menu .fa{
-
+    cursor: pointer;
     margin-right: 1rem;
 }
 .Login{
@@ -52,9 +55,14 @@
     font-size: 15px;
     letter-spacing: 1px;
 }
+.Signup p{
+    padding: 5px 0;
+    color:  #119b9b;
+}
 .Signup p:nth-child(2){
-    background-color: aqua;
-    padding-top: 1rem;
+    color: white;
+    background-color: #119b9b;
+    padding: 10px 0;
     position: absolute;
     width:100%;
 }
@@ -67,9 +75,15 @@
 
 }
 .Menu_List ul li{
-    font-size: 20px;
-    border-bottom: 2px solid green;
-
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color:white;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
 }
 .Menu_List ul li:last-child ul{
     display: inline-flex;
@@ -86,14 +100,25 @@
         padding: 5px;
         font-size: 25px;
         background-color: antiquewhite;
-        overflow: hidden;
     }
     .Login{
         display: none;
     }
     .Signup{
         position: absolute;
-        left: 100%;
+        left: 0;
+        top: 6rem;
+        width: 100%;
+        text-align: center;
+         transform: translateX(100%); 
+    }
+    .Signup_Active{
+        position: absolute;
+        left: 0;
+        top: 6rem;
+        width: 100%;
+        text-align: center;
+        transform: translateX(0);
     }
     .Mobile_Login{
         display: inline-flex
@@ -106,9 +131,30 @@
     
     }
     .Menu_List{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         position: absolute;
-        left: 100%;
+        left: 0; 
+        top: 5rem;
+        width: 100%;
+        background-color: #3852ba;
+        transform: translateX(100%);
+         
+    }
+    .Menu_Active{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0; 
+        top: 5rem;
+        width: 100%;
+        background-color: #3852ba;
+        transform: translateX(0);
+    }
+    .Menu_List ul{
+        padding: 0 1rem;
+        width: 100%;
+        text-align: center;
     }
     .Logo img{
         width: 200px;
