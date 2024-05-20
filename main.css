@@ -61,7 +61,7 @@ body{
 }
 .Signup p:nth-child(2){
     color: white;
-    background-color: #119b9b;
+    background-color: #38cfca;
     padding: 10px 0;
     position: absolute;
     width:100%;
@@ -90,7 +90,34 @@ body{
     position: absolute;
     top: 10%;
 }
+.Subheader_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #38cfca;
+    font-size: 20px;
+}
+.Subheader_1 p{
+    padding: 3rem 0;
+    line-height: 30px;
+    font-size: 22px;
+}
+.Subheader_1 button{
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: white;
+    color:#00416A;
+    font-weight: bold;
 
+}
+.Subheader_1 button:hover{
+    background-color: #00416A;
+    color: white;
+    font-weight: bold;
+}
 @media (max-width: 600px) {
     .header{
         display: flex;
