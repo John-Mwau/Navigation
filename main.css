@@ -105,7 +105,7 @@ body{
     font-size: 22px;
 }
 .Subheader_1 button{
-    padding: 6px 20px;
+    padding: 7px 32px;
     border-radius: 20px;
     font-size: 18px;
     background-color: white;
@@ -117,6 +117,10 @@ body{
     background-color: #00416A;
     color: white;
     font-weight: bold;
+}
+.mobile_search{
+    display: none;
+    padding: 5px 10px;
 }
 @media (max-width: 600px) {
     .header{
@@ -195,5 +199,9 @@ body{
         padding: 1rem 2rem;
         background-color: #38cfca;
         font-size: 20px;
+    }
+    .mobile_search{
+        display: flex;
+        padding: 5px 10px;
     }
 }
