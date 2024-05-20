@@ -131,6 +131,7 @@ body{
         padding: 5px;
         font-size: 25px;
         background-color: antiquewhite;
+        position: fixed;
     }
     .Login{
         display: none;
